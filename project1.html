@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sepiso Ndunda | Data Analyst</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">HOME</a></li>
+							<li class="active"><a href="project1.html">PROJECT ONE</a></li>
+							<!--<li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sepisondunda/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h2>Olympic Games Analysis - SADC Countries</h2>
+								</header>
+								<h3>Background Information</h3>
+									<p>As a data analyst i am asked by a news company to visualize data
+										 that will help readers understand how southern African development community countries (SADC) countries
+										  have performed historically in the Olympic Games for the period (1990 - 2010).
+
+										This also includes details about the competitors.
+								
+								<h3>Business Task</h3>	
+										To show historical performance for different countries that have won any medals</p>
+								
+								<h3>Data collection and Transformation</h3>
+										<p>The dataset is publicly available on used was taken from <a href="https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results?resource=download">'kaggle - 120 years olympic data'</a> , it was imported in an SQL database as a CSV and the transformations made  are shown below</p>
+								
+								<h4>Queries in MySQL workbench</h4>
+								<div class="image main"><img src="images/pic001.png" alt="" /></div>
+								
+								<h4>Data loaded in Power BI (DATA view)</h4>
+								<div class="image main"><img src="images/pic002.png" alt="" /></div>
+								
+								<h4>Data Model</h4>
+								<p>The query is loaded into Power BI, the data model created is one table. </p>
+								<div class="image main"><img src="images/pic003.png" alt="" /></div>
+								<h4>Calculations</h4>
+								<p> The following calculations were created in the Power BI reports using DAX (Data Analysis Expressions).
+
+								</br> Number of Competitors: <br> <br>
+
+								Number of Competitors = DISTINCTCOUNT( 'Olympic Data for SADC 1990-2010'[ID] ) <br>
+
+								Number of Medals = COUNTROWS( 'Olympic Data for SADC 1990-2010' )</p>
+								<h4>Olympic Games Analysis</h4>
+								<p>The finished visualizations consist of countries that have won atleast one medal between 1990 -2010, countries with zero medals have been filtered out</p>
+								<div class="image main"><img src="images/pic004.png" alt="" /></div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							
+							<section class="split contact">
+							
+								<section>
+									<h3>Social</h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/sepisondunda/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</section>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; SEPISO NDUNDA</li><li> </li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
